@@ -5,8 +5,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link href="http://api.bandexlife.cn/backend/css/easyui.css" rel="stylesheet" type="text/css" />
 </head>
-<body class="easyui-layout">
-<div id="topdiv" region="north" class="head">
+<body class="easyui-layout" style="background: #ccc;">
+<div id="topdiv" region="north" class="head" style="background: #ccc;">
     <span><img height="25px" width="25px" src=""/>后台</span>
     <div class="user">
         你好，<b>系统管理员</b><span>|</span><a
