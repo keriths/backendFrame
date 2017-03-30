@@ -10,14 +10,14 @@
 </head>
 <body class="easyui-layout" style="background: #cccccc">
 <div id="topdiv" region="north" class="head" style="background: #cccccc">
-top
+    top
 </div>
 <div region="west" title="导航菜单" class="left">
     <div class="sidebar-menu" id="menuBox">
         <a href="#oneMenuId_004" class="nav-header menu-first " data-toggle="collapse">项目管理</a>
         <ul id="oneMenuId_004" class="nav nav-list  menu-second in collapse " >
-            <li><a href="javascript:void(0)" class="menuItem" menuName="添加主合同" menuId="4001" menuUrl="/toCreateProject">项目列表</a></li>
-            <li><a href="javascript:void(0)" class="menuItem" >项目部署</a></li>
+            <li><a href="javascript:void(0)" class="menuItem" menuName="添加主合同" menuId="4001" menuUrl="/project/index">项目列表</a></li>
+            <li><a href="javascript:void(0)" class="menuItem" menuName="项目部署" menuId="4001" menuUrl="/project/index">项目部署</a></li>
         </ul>
     </div>
 </div>
@@ -46,10 +46,10 @@ top
             var menuName = _menuItem.attr("menuName");
             var menuId = _menuItem.attr("menuId");
             var menuUrl = _menuItem.attr("menuUrl");
-            _menuLi.click(function(){
+            _menuItem.click(function(){
                 openMenu(menuId,menuName,menuUrl);
             });
-            _menuLi.dblclick(function(){
+            _menuItem.dblclick(function(){
                 refreashMenu(menuId,menuName,menuUrl);
             });
         });

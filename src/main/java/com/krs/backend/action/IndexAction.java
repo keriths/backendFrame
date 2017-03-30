@@ -16,7 +16,7 @@ public class IndexAction {
     @RequestMapping(value = "/")
     public String index(){
 
-        return "mainFrame";
+        return "index";
     }
 
 
