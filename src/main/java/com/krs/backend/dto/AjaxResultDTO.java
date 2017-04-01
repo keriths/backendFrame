@@ -45,7 +45,11 @@ public class AjaxResultDTO implements Serializable {
         return data;
     }
 
-    public void setData(Map data) {
-        this.data = data;
+    public void setValue(String key,Object value){
+        data.put(key,value);
+    }
+
+    public void setValues(Map valueMap){
+        data.putAll(valueMap);
     }
 }
